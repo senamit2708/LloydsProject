@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/userListFragment">
+    app:startDestination="@id/newUserFrag">
 
     <fragment
         android:id="@+id/userListFragment"
@@ -19,4 +19,8 @@
         android:name="com.example.lloydsproject.userModule.fragment.UserDetailFragment"
         android:label="UserDetail"
         tools:layout="@layout/user_detail"/>
+    <fragment
+        android:id="@+id/newUserFrag"
+        android:name="com.example.lloydsproject.userModule.fragment.NewUserFrag"
+        android:label="NewUserFrag" />
 </navigation>

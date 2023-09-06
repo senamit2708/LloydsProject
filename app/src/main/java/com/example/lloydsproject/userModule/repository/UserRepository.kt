@@ -12,11 +12,11 @@ import java.lang.Exception
 class UserRepository(application: Application) {
 
     private val TAG = UserRepository::class.java.simpleName
-    val userDatabase: LloydDatabase
+    lateinit var userDatabase: LloydDatabase
     val userDao: UserDao
 
     init {
-        userDatabase = LloydDatabase.getDatabse(application);
+//        userDatabase =  //LloydDatabase.getDatabse(application);
         userDao = userDatabase.getUserDao()
     }
 

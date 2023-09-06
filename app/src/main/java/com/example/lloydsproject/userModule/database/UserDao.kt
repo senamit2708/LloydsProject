@@ -13,6 +13,9 @@ public abstract interface UserDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insert(userData: List<UserData>): LongArray
 
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertUser(userData: UserData): Long
+
     @Delete
     suspend fun deleteUser(userData: UserData)
 
